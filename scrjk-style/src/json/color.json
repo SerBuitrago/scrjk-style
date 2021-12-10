@@ -1,0 +1,46 @@
+{
+    "SCRJKColor": {
+        "outside": {
+            "border": ["rgba(0, 0, 0, .3)", "#FFFFFF"]
+        },
+        "inside": {
+            "default": {
+                "s1":           ["sorange"],
+                "sbody":        ["swhite"],
+                "sdisabled":    ["sgray"]
+            },
+            "alert": {
+                "info":       ["sblue"],
+                "danger":     ["sred"],
+                "warning":    ["syellow"],
+                "success":    ["sgreen"],                                        
+                "fatal":      ["sblack"] 
+            }, 
+            "outside": {
+                "border": ["rgba(0, 0, 0, .3)", "#FFFFFF"]
+            },
+            "hover": {
+                "s1": "linear-gradient(rgba(255, 255, 255, 0.3),  rgba(0, 0, 0, .0))"
+            }
+        },
+        "default": {
+            "samber":        ["#FFC107", "#FFFFFF"],
+            "scyam":         ["#00bcd4" , "#34332F"],
+            "sblack":        ["#34332F" , "#FFFFFF"],
+            "sblue":         ["#2196F3" , "#FFFFFF"],
+            "sbrown":        ["#795548" , "#FFFFFF"],
+            "sgray":         ["#9e9e9e" , "#FFFFFF"],
+            "sgreen":        ["#4CAF50" , "#FFFFFF"],
+            "sindigo":       ["#3f51b5" , "#FFFFFF"],
+            "slime":         ["#cddc39" , "#FFFFFF"],
+            "sorange":       ["#FF7514" , "#FFFFFF"],
+            "spurple":       ["#673ab7" , "#FFFFFF"],
+            "spink":         ["#e91e63" , "#FFFFFF"],
+            "sred":          ["#F44336" , "#FFFFFF"],
+            "steal":         ["#009688" , "#FFFFFF"],
+            "syellow":       ["#ffeb3b" , "#34332F"],
+            "swhite":        ["#FFFFFF" , "#34332F"],
+            "stransparent":  ["rgba(0,0,0,0)" , "rgba(0,0,0,0)"]
+        }
+    }
+}
