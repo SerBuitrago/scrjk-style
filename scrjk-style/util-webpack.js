@@ -44,6 +44,8 @@ exports.rules = function (type, data = null) {
                         syntax: 'scss',
                         files: [
                             data.PATH.resolve(__dirname, `${data._DIR_}/color.json`),
+                            data.PATH.resolve(__dirname, `${data._DIR_}/${ENTRY_POINT}/scrjk.json`),
+                            data.PATH.resolve(__dirname, `${data._DIR_}/${ENTRY_POINT}/init.json`),
                             data.PATH.resolve(__dirname, `${data._DIR_}/${ENTRY_POINT}/layout.json`),
                         ]
                     }
