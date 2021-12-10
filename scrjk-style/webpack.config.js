@@ -28,6 +28,7 @@ module.exports = {
     },
     entry: {
         "scrjk-layout": `./${_DIR_SRC_JS_}/entry/${_NAME_}-layout.js`,
+        "scrjk-color": `./${_DIR_SRC_JS_}/entry/${_NAME_}-color.js`,
     },
     output: {
         filename: `${_DIR_DIST_JS_}/[name].js`,

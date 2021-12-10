@@ -1,46 +1,250 @@
 {
     "SCRJKColor": {
-        "outside": {
-            "border": ["rgba(0, 0, 0, .3)", "#FFFFFF"]
+        "palette": {
+            "_1": {
+                "light": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#FDBE34"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#FDBE34"
+                }
+            },
+            "_2": {
+                "light": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#F2F7FF"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#F2F7FF"
+                }
+            },
+            "_3": {
+                "light": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#10316B"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#10316B"
+                }
+            },
+            "_4": {
+                "light": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#0B409C"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "#0B409C"
+                }
+            }
         },
-        "inside": {
-            "default": {
-                "s1":           ["sorange"],
-                "sbody":        ["swhite"],
-                "sdisabled":    ["sgray"]
+        "document": {
+            "body": {
+                "light": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_white"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_white"
+                }
             },
-            "alert": {
-                "info":       ["sblue"],
-                "danger":     ["sred"],
-                "warning":    ["syellow"],
-                "success":    ["sgreen"],                                        
-                "fatal":      ["sblack"] 
-            }, 
-            "outside": {
-                "border": ["rgba(0, 0, 0, .3)", "#FFFFFF"]
+            "disabled": {
+                "light": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_gray"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_gray"
+                }
+            }
+        },
+        "alert": {
+            "info": {
+                "light": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_blue"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_blue"
+                }
             },
-            "hover": {
-                "s1": "linear-gradient(rgba(255, 255, 255, 0.3),  rgba(0, 0, 0, .0))"
+            "danger": {
+                "light": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_red"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_red"
+                }
+            },
+            "warning": {
+                "light": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_yellow"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_yellow"
+                }
+            },
+            "success": {
+                "light": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_green"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_green"
+                }
+            },
+            "fatal": {
+                "light": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_black"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": true
+                    },
+                    "value":  "_black"
+                }
+            }
+        },
+        "hover": {
+            "_1": {
+                "light": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "linear-gradient(rgba(255, 255, 255, 0.3),  rgba(0, 0, 0, .0))"
+                },
+                "darken": {
+                    "bool": {
+                        "inside": false
+                    },
+                    "value":  "linear-gradient(rgba(255, 255, 255, 0.3),  rgba(0, 0, 0, .0))"
+                }
             }
         },
         "default": {
-            "samber":        ["#FFC107", "#FFFFFF"],
-            "scyam":         ["#00bcd4" , "#34332F"],
-            "sblack":        ["#34332F" , "#FFFFFF"],
-            "sblue":         ["#2196F3" , "#FFFFFF"],
-            "sbrown":        ["#795548" , "#FFFFFF"],
-            "sgray":         ["#9e9e9e" , "#FFFFFF"],
-            "sgreen":        ["#4CAF50" , "#FFFFFF"],
-            "sindigo":       ["#3f51b5" , "#FFFFFF"],
-            "slime":         ["#cddc39" , "#FFFFFF"],
-            "sorange":       ["#FF7514" , "#FFFFFF"],
-            "spurple":       ["#673ab7" , "#FFFFFF"],
-            "spink":         ["#e91e63" , "#FFFFFF"],
-            "sred":          ["#F44336" , "#FFFFFF"],
-            "steal":         ["#009688" , "#FFFFFF"],
-            "syellow":       ["#ffeb3b" , "#34332F"],
-            "swhite":        ["#FFFFFF" , "#34332F"],
-            "stransparent":  ["rgba(0,0,0,0)" , "rgba(0,0,0,0)"]
+            "_amber": {
+                "light": "#FFC107",
+                "darken": "#FFC107"
+            },
+            "_cyam": {
+                "light": "#00bcd4",
+                "darken": "#00bcd4"
+            },
+            "_black": {
+                "light": "#34332F",
+                "darken": "#34332F"
+            },
+            "_blue": {
+                "light": "#2196F3",
+                "darken": "#2196F3"
+            },
+            "_brown": {
+                "light": "#795548",
+                "darken": "#795548"
+            },
+            "_gray": {
+                "light": "#9e9e9e",
+                "darken": "#9e9e9e"
+            },
+            "_green": {
+                "light": "#4CAF50",
+                "darken": "#4CAF50"
+            },
+            "_indigo": {
+                "light": "#3f51b5",
+                "darken": "#3f51b5"
+            },
+            "_lime": {
+                "light": "#cddc39",
+                "darken": "#cddc39"
+            },
+            "_orange": {
+                "light": "#FF7514",
+                "darken": "#FF7514"
+            },
+            "_purple": {
+                "light": "#673ab7",
+                "darken": "#673ab7"
+            },
+            "_pink": {
+                "light": "#e91e63",
+                "darken": "#e91e63"
+            },
+            "_red": {
+                "light": "#F44336",
+                "darken": "#F44336"
+            },
+            "_teal": {
+                "light": "#009688",
+                "darken": "#009688"
+            },
+            "_yellow": {
+                "light": "#ffeb3b",
+                "darken": "#ffeb3b"
+            },
+            "_white": {
+                "light": "#FFFFFF",
+                "darken": "#FFFFFF"
+            },
+            "_transparent": {
+                "light": "rgba(0,0,0,0)",
+                "darken": "rgba(0,0,0,0)"
+            }
         }
     }
 }
