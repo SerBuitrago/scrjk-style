@@ -22,3 +22,20 @@
     }
     @return null;
 }
+
+@function getColor($color, $mode: $var-scrjk-txt-mode-light) {
+    @if (lightness($color) > 50) {
+      @return getMap($var-scrjk-json-color, (default, _black, $mode, value));
+    } @else {
+      @return  getMap($var-scrjk-json-color, (default, _white, $mode, value));
+    }
+}
+
+@function getColorType($map: (), $key: "", $mode: $var-scrjk-txt-mode-light) {
+    @debug $key;
+    @if getMap($map, ($mode, bool, inside)){
+        @return getMap($var-scrjk-json-color, (default, $key, $mode, value));
+    }@else{
+        @return getMap($map, ($mode, value));
+    }
+}

@@ -1,0 +1,11 @@
+@function remove(
+    $name, 
+    $start: 0, 
+    $end:   $var-scrjk-txt-null,
+){
+    @if $end != $var-scrjk-txt-null {
+        @return str-slice($name, $start, $end);
+    }@else{
+        @return str-slice($name, $start);
+    }
+}

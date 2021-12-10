@@ -1,0 +1,6 @@
+:root{
+    @include mixin-iterator-root-background(getMap($var-scrjk-json-color, (palette)), $var-scrjk-value-true);
+    @include mixin-iterator-root-background(getMap($var-scrjk-json-color, (default)), $var-scrjk-value-true);
+    @include mixin-iterator-root-background(getMap($var-scrjk-json-color, (alert)));
+    @include mixin-iterator-root-background(getMap($var-scrjk-json-color, (document)));
+}

@@ -1,0 +1,17 @@
+@mixin mixin-iterator-root-background(
+    $iterator: (),
+    $isRemove: $var-scrjk-value-false,
+    $nameBefore: "",
+    $nameCenter: "",
+    $nameAfter: "",
+    $mode: $var-scrjk-txt-mode-light
+) {
+    @each $key, $value in $iterator {
+        $color: getColorType($value, getMap($value, ($mode, value)), $mode);
+        @if $isRemove == $var-scrjk-value-true {
+            $key: remove($key, $var-scrjk-value-index-key);
+        }
+        #{$var-scrjk-txt-var}#{$nameBefore}background-#{$nameCenter}#{$key}#{$nameAfter}: #{$color};
+        #{$var-scrjk-txt-var}#{$nameBefore}color-#{$nameCenter}#{$key}#{$nameAfter}:      #{getColor($color, $mode)};
+    }
+}
