@@ -1,0 +1,4 @@
+$map: getMap($var-scrjk-json-entry-scrjk, (dimension, view));
+@import "width/min";
+@import "width/default";
+@import "width/max";
