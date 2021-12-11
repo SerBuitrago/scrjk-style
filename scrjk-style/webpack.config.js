@@ -27,8 +27,8 @@ module.exports = {
         maxAssetSize: 512000
     },
     entry: {
-        "scrjk-init": `./${_DIR_SRC_JS_}/entry/${_NAME_}-init.js`,
-        //"scrjk-layout": `./${_DIR_SRC_JS_}/entry/${_NAME_}-layout.js`,
+        //"scrjk-init": `./${_DIR_SRC_JS_}/entry/${_NAME_}-init.js`,
+        "scrjk-layout": `./${_DIR_SRC_JS_}/entry/${_NAME_}-layout.js`,
         //"scrjk-color": `./${_DIR_SRC_JS_}/entry/${_NAME_}-color.js`,
     },
     output: {

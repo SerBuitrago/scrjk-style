@@ -1,0 +1,23 @@
+$map: getMap($var-scrjk-json-entry-layout, (border, all, width, iterator));
+
+@each $key-a, $value-a in $map{
+    $key-a: remove($key-a, $var-scrjk-value-index-key);
+    @include mixin-iterator-direction(
+        ("b", "w-", $key-a), 
+        ("border", "-width"), 
+        ($value-a)
+    );
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            $key-a: remove($key-a, $var-scrjk-value-index-key);
+            @include mixin-iterator-direction(
+                ("b", "#{$key-media}-w-", $key-a), 
+                ("border", "-width"), 
+                ($value-a)
+            );
+        }
+    }
+}
