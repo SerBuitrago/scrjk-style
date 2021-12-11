@@ -51,3 +51,20 @@
         }
     }
 }
+
+@mixin mixin-iterator-root(
+    $iterator: (), 
+    $tag: "font-size", 
+    $isRemove: false,
+    $character: $var-scrjk-txt-character-1
+) {
+    @if $tag != $var-scrjk-txt-null {
+        $tag: $tag + $character;
+        @each $key, $value in $iterator {
+            @if $isRemove ==  $var-scrjk-value-true{
+                $key: remove($key, $var-scrjk-value-index-key);
+            }
+            #{$var-scrjk-txt-var}#{$tag}#{$key}: #{nth($value, 1)};
+        }
+    } 
+}
