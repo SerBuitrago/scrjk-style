@@ -120,6 +120,249 @@
     position: sticky!important
   }
 }
+.d-inline {
+  display: inline!important
+}
+.d-inline-table {
+  display: inline-table!important
+}
+.d-inline-block {
+  display: inline-block!important
+}
+.d-inline-flex {
+  display: inline-flex!important
+}
+.d-inline-grid {
+  display: inline-grid!important
+}
+.d-table {
+  display: table!important
+}
+.d-block {
+  display: block!important
+}
+.d-flex {
+  display: flex!important
+}
+.d-grid {
+  display: grid!important
+}
+.d-inherit {
+  display: inherit!important
+}
+.d-none {
+  display: none!important
+}
+@media screen and (max-width:1400px) {
+  .d-xxl-inline {
+    display: inline!important
+  }
+  .d-xxl-inline-table {
+    display: inline-table!important
+  }
+  .d-xxl-inline-block {
+    display: inline-block!important
+  }
+  .d-xxl-inline-flex {
+    display: inline-flex!important
+  }
+  .d-xxl-inline-grid {
+    display: inline-grid!important
+  }
+  .d-xxl-table {
+    display: table!important
+  }
+  .d-xxl-block {
+    display: block!important
+  }
+  .d-xxl-flex {
+    display: flex!important
+  }
+  .d-xxl-grid {
+    display: grid!important
+  }
+  .d-xxl-inherit {
+    display: inherit!important
+  }
+  .d-xxl-none {
+    display: none!important
+  }
+}
+@media screen and (max-width:1200px) {
+  .d-xl-inline {
+    display: inline!important
+  }
+  .d-xl-inline-table {
+    display: inline-table!important
+  }
+  .d-xl-inline-block {
+    display: inline-block!important
+  }
+  .d-xl-inline-flex {
+    display: inline-flex!important
+  }
+  .d-xl-inline-grid {
+    display: inline-grid!important
+  }
+  .d-xl-table {
+    display: table!important
+  }
+  .d-xl-block {
+    display: block!important
+  }
+  .d-xl-flex {
+    display: flex!important
+  }
+  .d-xl-grid {
+    display: grid!important
+  }
+  .d-xl-inherit {
+    display: inherit!important
+  }
+  .d-xl-none {
+    display: none!important
+  }
+}
+@media screen and (max-width:992px) {
+  .d-lg-inline {
+    display: inline!important
+  }
+  .d-lg-inline-table {
+    display: inline-table!important
+  }
+  .d-lg-inline-block {
+    display: inline-block!important
+  }
+  .d-lg-inline-flex {
+    display: inline-flex!important
+  }
+  .d-lg-inline-grid {
+    display: inline-grid!important
+  }
+  .d-lg-table {
+    display: table!important
+  }
+  .d-lg-block {
+    display: block!important
+  }
+  .d-lg-flex {
+    display: flex!important
+  }
+  .d-lg-grid {
+    display: grid!important
+  }
+  .d-lg-inherit {
+    display: inherit!important
+  }
+  .d-lg-none {
+    display: none!important
+  }
+}
+@media screen and (max-width:768px) {
+  .d-md-inline {
+    display: inline!important
+  }
+  .d-md-inline-table {
+    display: inline-table!important
+  }
+  .d-md-inline-block {
+    display: inline-block!important
+  }
+  .d-md-inline-flex {
+    display: inline-flex!important
+  }
+  .d-md-inline-grid {
+    display: inline-grid!important
+  }
+  .d-md-table {
+    display: table!important
+  }
+  .d-md-block {
+    display: block!important
+  }
+  .d-md-flex {
+    display: flex!important
+  }
+  .d-md-grid {
+    display: grid!important
+  }
+  .d-md-inherit {
+    display: inherit!important
+  }
+  .d-md-none {
+    display: none!important
+  }
+}
+@media screen and (max-width:576px) {
+  .d-sm-inline {
+    display: inline!important
+  }
+  .d-sm-inline-table {
+    display: inline-table!important
+  }
+  .d-sm-inline-block {
+    display: inline-block!important
+  }
+  .d-sm-inline-flex {
+    display: inline-flex!important
+  }
+  .d-sm-inline-grid {
+    display: inline-grid!important
+  }
+  .d-sm-table {
+    display: table!important
+  }
+  .d-sm-block {
+    display: block!important
+  }
+  .d-sm-flex {
+    display: flex!important
+  }
+  .d-sm-grid {
+    display: grid!important
+  }
+  .d-sm-inherit {
+    display: inherit!important
+  }
+  .d-sm-none {
+    display: none!important
+  }
+}
+@media screen and (max-width:360px) {
+  .d-xs-inline {
+    display: inline!important
+  }
+  .d-xs-inline-table {
+    display: inline-table!important
+  }
+  .d-xs-inline-block {
+    display: inline-block!important
+  }
+  .d-xs-inline-flex {
+    display: inline-flex!important
+  }
+  .d-xs-inline-grid {
+    display: inline-grid!important
+  }
+  .d-xs-table {
+    display: table!important
+  }
+  .d-xs-block {
+    display: block!important
+  }
+  .d-xs-flex {
+    display: flex!important
+  }
+  .d-xs-grid {
+    display: grid!important
+  }
+  .d-xs-inherit {
+    display: inherit!important
+  }
+  .d-xs-none {
+    display: none!important
+  }
+}
 .w-min-auto {
   min-width: auto!important
 }

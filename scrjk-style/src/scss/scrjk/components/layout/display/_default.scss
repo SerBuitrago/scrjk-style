@@ -1,0 +1,16 @@
+$map: getMap($var-scrjk-json-entry-layout, (display, iterator)); 
+@each $key-a, $value-a in $map{
+    .d-#{$key-a}{
+        display: #{$value-a} #{$var-scrjk-txt-important};
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            .d-#{$key-media}-#{$key-a}{
+                display: #{$value-a} #{$var-scrjk-txt-important};
+            }
+        }
+    }
+}
