@@ -3,6 +3,123 @@
   * Copyright 2021 The Authors (https://github.com/SerBuitrago)
   * Licensed MIT (https://github.com/SerBuitrago/scrjk-style/blob/master/LICENSE)
   */
+.position-static {
+  position: static!important
+}
+.position-relative {
+  position: relative!important
+}
+.position-absolute {
+  position: absolute!important
+}
+.position-fixed {
+  position: fixed!important
+}
+.position-sticky {
+  position: sticky!important
+}
+@media screen and (max-width:1400px) {
+  .position-xxl-static {
+    position: static!important
+  }
+  .position-xxl-relative {
+    position: relative!important
+  }
+  .position-xxl-absolute {
+    position: absolute!important
+  }
+  .position-xxl-fixed {
+    position: fixed!important
+  }
+  .position-xxl-sticky {
+    position: sticky!important
+  }
+}
+@media screen and (max-width:1200px) {
+  .position-xl-static {
+    position: static!important
+  }
+  .position-xl-relative {
+    position: relative!important
+  }
+  .position-xl-absolute {
+    position: absolute!important
+  }
+  .position-xl-fixed {
+    position: fixed!important
+  }
+  .position-xl-sticky {
+    position: sticky!important
+  }
+}
+@media screen and (max-width:992px) {
+  .position-lg-static {
+    position: static!important
+  }
+  .position-lg-relative {
+    position: relative!important
+  }
+  .position-lg-absolute {
+    position: absolute!important
+  }
+  .position-lg-fixed {
+    position: fixed!important
+  }
+  .position-lg-sticky {
+    position: sticky!important
+  }
+}
+@media screen and (max-width:768px) {
+  .position-md-static {
+    position: static!important
+  }
+  .position-md-relative {
+    position: relative!important
+  }
+  .position-md-absolute {
+    position: absolute!important
+  }
+  .position-md-fixed {
+    position: fixed!important
+  }
+  .position-md-sticky {
+    position: sticky!important
+  }
+}
+@media screen and (max-width:576px) {
+  .position-sm-static {
+    position: static!important
+  }
+  .position-sm-relative {
+    position: relative!important
+  }
+  .position-sm-absolute {
+    position: absolute!important
+  }
+  .position-sm-fixed {
+    position: fixed!important
+  }
+  .position-sm-sticky {
+    position: sticky!important
+  }
+}
+@media screen and (max-width:360px) {
+  .position-xs-static {
+    position: static!important
+  }
+  .position-xs-relative {
+    position: relative!important
+  }
+  .position-xs-absolute {
+    position: absolute!important
+  }
+  .position-xs-fixed {
+    position: fixed!important
+  }
+  .position-xs-sticky {
+    position: sticky!important
+  }
+}
 .w-min-auto {
   min-width: auto!important
 }
