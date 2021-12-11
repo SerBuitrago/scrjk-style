@@ -1,0 +1,50 @@
+$map: getMap($var-scrjk-json-color, default);
+@each $key-a, $value-a in $map{
+    $key-a: remove($key-a, 2);
+    .bg-c-#{$key-a}{
+        background-color: var(#{$var-scrjk-txt-var}background-#{$key-a}) #{$var-scrjk-txt-important};
+        color: var(#{$var-scrjk-txt-var}color-#{$key-a}) #{$var-scrjk-txt-important};
+    }
+}
+
+$map-alert: getMap($var-scrjk-json-color, alert);
+@each $key-a, $value-a in $map-alert{
+    .bg-c-#{$key-a}{
+        background-color: var(#{$var-scrjk-txt-var}background-#{$key-a}) #{$var-scrjk-txt-important};
+        color: var(#{$var-scrjk-txt-var}color-#{$key-a}) #{$var-scrjk-txt-important};
+    }
+}
+
+$map-palette: getMap($var-scrjk-json-color, palette);
+@each $key-a, $value-a in $map-palette{
+    $key-a: remove($key-a, 2);
+    .bg-c-palette-#{$key-a}{
+        background-color: var(#{$var-scrjk-txt-var}background-#{$key-a}) #{$var-scrjk-txt-important};
+        color: var(#{$var-scrjk-txt-var}color-#{$key-a}) #{$var-scrjk-txt-important};
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            $key-a: remove($key-a, 2);
+            .bg-#{$key-media}-c-#{$key-a}{
+                background-color: var(#{$var-scrjk-txt-var}background-#{$key-a}) #{$var-scrjk-txt-important};
+                color: var(#{$var-scrjk-txt-var}color-#{$key-a}) #{$var-scrjk-txt-important};
+            }
+        }
+        @each $key-a, $value-a in $map-alert{
+            .bg-#{$key-media}-c-#{$key-a}{
+                background-color: var(#{$var-scrjk-txt-var}background-#{$key-a}) #{$var-scrjk-txt-important};
+                color: var(#{$var-scrjk-txt-var}color-#{$key-a}) #{$var-scrjk-txt-important};
+            }
+        }
+        @each $key-a, $value-a in $map-palette{
+            $key-a: remove($key-a, 2);
+            .bg-#{$key-media}-c-palette-#{$key-a}{
+                background-color: var(#{$var-scrjk-txt-var}background-#{$key-a}) #{$var-scrjk-txt-important};
+                color: var(#{$var-scrjk-txt-var}color-#{$key-a}) #{$var-scrjk-txt-important};
+            }
+        }
+    }   
+}
