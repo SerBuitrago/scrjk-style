@@ -1,0 +1,22 @@
+$map-spacer: getMap($var-scrjk-json-entry-scrjk, (spacer));
+@each $key-a, $value-a in $map-spacer{
+    $key-a: remove($key-a, $var-scrjk-value-index-key);
+    @include mixin-iterator-direction(
+            ("p", "", $key-a), 
+            ("padding", ""), 
+            (var(#{$var-scrjk-txt-var}spacer-#{$key-a}))
+        );
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map-spacer{
+            $key-a: remove($key-a, $var-scrjk-value-index-key);
+            @include mixin-iterator-direction(
+                ("p", "#{$key-media}-", $key-a), 
+                ("padding", ""), 
+                (var(#{$var-scrjk-txt-var}spacer-#{$key-a}))
+            );
+        }
+    }
+}
