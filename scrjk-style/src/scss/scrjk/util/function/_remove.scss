@@ -9,3 +9,23 @@
         @return str-slice($name, $start);
     }
 }
+
+@function removeText(
+    $name, 
+    $optional: $var-scrjk-txt-null,
+    $ignore:   $var-scrjk-txt-base, 
+    $end:      $var-scrjk-value-true, 
+    $index:    (1, 1)
+){
+    @if $name == $ignore or $optional == $ignore{
+        @return "";
+    }@else if str-length($name) == 1 {
+        @return $name;
+    }@else{
+        @if $end {
+            @return str-slice($name, nth($index, 1), nth($index, 2)) + str-slice($name, str-length($name));
+        }@else{
+            @return str-slice($name, nth($index, 1), nth($index, 2));
+        }   
+    }
+}

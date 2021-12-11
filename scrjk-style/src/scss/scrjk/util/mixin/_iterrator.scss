@@ -15,3 +15,39 @@
         #{$var-scrjk-txt-var}#{$nameBefore}color-#{$nameCenter}#{$key}#{$nameAfter}:      #{getColor($color, $mode)};
     }
 }
+
+@mixin mixin-iterator-direction(
+    $name:  ("m", "", ""),
+    $tag:   ("margin", "", ""),
+    $value: (""),
+    $is:    ($var-scrjk-value-false),
+    $option: (
+        $var-scrjk-txt-null,
+        "normal",
+        $var-scrjk-txt-important
+    ),
+    $direction: getMap($var-scrjk-json-entry-scrjk, (direction))
+){
+    $other: "";
+    @if nth($is, 1) {
+        $lengthName: length($name);   
+        @if $lengthName >= 4 {
+            $other: nth($name, 4);
+        }
+    }
+    @each $key-b, $value-b in $direction{
+        .#{nth($name, 1)}#{removeText($key-b, nth($option, 1), nth($option, 2), $var-scrjk-value-false)}-#{nth($name, 2)}#{$other}#{nth($name, 3)}{
+            @if is($key-b, nth($option, 2)) == $var-scrjk-value-true{
+                $s1:    "#{nth($tag, 1)}#{nth($tag, 2)}";
+                #{$s1}:  nth($value, 1) #{nth($option, 3)};
+            }@else{
+                @each $key-c, $value-c in $value-b{ 
+                    @if is(#{$value-c}) == $var-scrjk-value-false {
+                        $s1:   "#{nth($tag, 1)}-#{$value-c}#{nth($tag, 2)}";
+                        #{$s1}: nth($value, 1) #{nth($option, 3)};
+                    }
+                }
+            }
+        }
+    }
+}

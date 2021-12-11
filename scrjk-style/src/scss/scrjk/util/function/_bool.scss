@@ -1,0 +1,8 @@
+@function is($a: "", $b: $var-scrjk-txt-null){
+    @if $a == $b or "#{$a}" == $b or 
+        "#{$a}" == "#{$b}" or $a == "#{$b}"{
+        @return $var-scrjk-value-true;
+    }@else{
+        @return $var-scrjk-value-false;
+    }
+}
