@@ -1,0 +1,15 @@
+@each $key-a, $value-a in $map{
+    .overflow-y-#{$key-a}{
+        overflow-y: #{$value-a} #{$var-scrjk-txt-important};
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            .overflow-#{$key-media}-y-#{$key-a}{
+                overflow-y: #{$value-a} #{$var-scrjk-txt-important};
+            }
+        }
+    }
+}
