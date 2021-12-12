@@ -1,0 +1,19 @@
+$map: getMap($var-scrjk-json-entry-layout, (outline, all, offset, iterator)); 
+
+@each $key-a, $value-a in $map{
+    $key-a: remove($key-a, $var-scrjk-value-index-key);
+    .o-of-#{$key-a}{
+        outline-offset: #{$value-a} #{$var-scrjk-txt-important};
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            $key-a: remove($key-a, $var-scrjk-value-index-key);
+            .o-#{$key-media}-of-#{$key-a}{
+                outline-offset: #{$value-a} #{$var-scrjk-txt-important};
+            }
+        }
+    }
+}

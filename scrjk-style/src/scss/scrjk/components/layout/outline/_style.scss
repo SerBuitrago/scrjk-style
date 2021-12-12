@@ -1,0 +1,17 @@
+$map: getMap($var-scrjk-json-entry-layout, (outline, all, style, iterator)); 
+
+@each $key-a, $value-a in $map{
+    .o-st-#{$key-a}{
+        outline-style: #{$value-a} #{$var-scrjk-txt-important};
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            .o-#{$key-media}-st-#{$key-a}{
+                outline-style: #{$value-a} #{$var-scrjk-txt-important};
+            }
+        }
+    }
+}

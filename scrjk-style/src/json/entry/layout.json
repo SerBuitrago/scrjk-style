@@ -50,6 +50,53 @@
                 }
             }
         },
+        "outline": {
+            "all": {
+                "offset": {
+                    "iterator": {
+                        "_n1":  "-1px",
+                        "_n2":  "-2px",
+                        "_n3":  "-3px",
+                        "_n4":  "-4px",
+                        "_n5":  "-5px",
+                        "_1":   "1px",
+                        "_2":   "2px",
+                        "_3":   "3px",
+                        "_4":   "4px",
+                        "_5":   "5px",
+                        "_1em": "1em"
+                    }
+                },
+                "width": {
+                    "iterator": { 
+                        "_1":   "1px",
+                        "_2":   "2px",
+                        "_3":   "3px",
+                        "_4":   "4px",
+                        "_5":   "5px",
+                        "_6":   "6px",
+                        "_7":   "7px",
+                        "_8":   "8px",
+                        "_9":   "9px",
+                        "_10":  "10px",
+                        "_1em": "1em"
+                    }
+                },
+                "style": {
+                    "iterator": {
+                        "dotted": "dotted",
+                        "dashed": "dashed",
+                        "solid":  "solid",
+                        "double": "double",
+                        "groove": "groove",
+                        "ridge":  "ridge",
+                        "inset":  "inset",
+                        "outset": "outset",
+                        "none":   "none"
+                    } 
+                }
+            }
+        },
         "position": {
             "iterator": {
                 "static":   "static",
