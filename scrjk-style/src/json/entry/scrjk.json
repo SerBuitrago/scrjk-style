@@ -79,6 +79,19 @@
             "_10":   "2.5em",
             "_11":   "2.75em",
             "_12":   "3em"
+        },
+        "class": {
+            "option": {
+                "active": "option-active",
+                "scroll": "option-scroll",
+                "disabled": "option-disabled",
+                "align": {
+                    "top":     "option-align-top",
+                    "right":   "option-align-right",
+                    "bottom":  "option-align-bottom",
+                    "left":    "option-align-left"
+                }
+            }
         }
     }
     

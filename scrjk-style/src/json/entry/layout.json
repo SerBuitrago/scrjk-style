@@ -1,5 +1,12 @@
 {
     "SCRJKEntryLayout": {
+        "container": {
+            "option": {
+                "dimension": {
+                    "width": "xl"
+                }
+            }
+        },
         "border": {
             "all": {
                 "style": {

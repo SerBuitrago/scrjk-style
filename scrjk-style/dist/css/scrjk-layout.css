@@ -3,6 +3,30 @@
   * Copyright 2021 The Authors (https://github.com/SerBuitrago)
   * Licensed MIT (https://github.com/SerBuitrago/scrjk-style/blob/master/LICENSE)
   */
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: inherit;
+  background-color: inherit;
+  font-size: var(--scrjk-font-size-1);
+  overflow: visible
+}
+.container.option-scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px
+}
+.container.option-scroll::-webkit-scrollbar-track {
+  background: var(--scrjk-background-1)
+}
+.container.option-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--scrjk-background-1);
+  border-radius: 5px;
+  border: 1px solid var(--scrjk-color-1)
+}
 .b-w-1 {
   border-width: 1px!important
 }
