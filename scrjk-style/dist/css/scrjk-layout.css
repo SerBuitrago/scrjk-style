@@ -4381,6 +4381,21 @@
     position: sticky!important
   }
 }
+.flex {
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  flex-direction: row!important;
+  flex-wrap: wrap!important;
+  height: auto!important
+}
+.flex-reset {
+  display: flex!important;
+  justify-content: none!important;
+  align-items: none!important;
+  flex-direction: none!important;
+  flex-wrap: none!important
+}
 .d-inline {
   display: inline!important
 }

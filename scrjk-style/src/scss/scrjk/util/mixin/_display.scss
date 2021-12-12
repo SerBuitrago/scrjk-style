@@ -1,0 +1,16 @@
+@mixin mixin-display-flex(
+    $justify-content: center, 
+    $align-items: center, 
+    $flex-direction: row, 
+    $flex-wrap: wrap, 
+    $height: auto  
+) {	
+	display: flex #{$var-scrjk-txt-important};
+	justify-content: $justify-content #{$var-scrjk-txt-important};
+	align-items: $align-items #{$var-scrjk-txt-important};
+	flex-direction: $flex-direction #{$var-scrjk-txt-important};
+	flex-wrap: $flex-wrap #{$var-scrjk-txt-important}; 
+    @if $height != $var-scrjk-txt-null {
+        height: $height #{$var-scrjk-txt-important};   
+    }
+}
