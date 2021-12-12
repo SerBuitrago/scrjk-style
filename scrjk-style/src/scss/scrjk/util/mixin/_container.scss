@@ -1,0 +1,22 @@
+@mixin mixin-container(
+    $max-width: nth(getMap($var-scrjk-value-media, (xl)), 1),
+    $overflow: visible,
+    $width: 100%,
+    $height: auto,
+    $font-size: var(#{$var-scrjk-txt-var}font-size-1),
+    $isScroll: $var-scrjk-value-false
+) {	
+    position: relative;
+	display: block;
+    width: $width;
+    height: $height;
+    max-width: $max-width;
+    margin: 0 auto;
+    color: inherit;
+    background-color: inherit;
+    font-size: $font-size;
+    overflow: $overflow;
+    @if $isScroll {
+        @include mixin-scroll();
+    }
+}

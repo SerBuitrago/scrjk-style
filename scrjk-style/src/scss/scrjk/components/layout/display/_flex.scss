@@ -1,0 +1,8 @@
+.flex{
+    @include mixin-display-flex();
+}
+.flex-reset{
+    @include mixin-display-flex(none, none, none, none, $var-scrjk-txt-null);
+}
+
+@import "flex/deprecated";

@@ -1,0 +1,9 @@
+$var-scrjk-class-option-scroll: getMap($var-scrjk-json-entry-scrjk, (class, option, scroll));
+
+$var-scrjk-class-option-disabled: getMap($var-scrjk-json-entry-scrjk, (class, option, disabled));
+$var-scrjk-class-option-active: getMap($var-scrjk-json-entry-scrjk, (class, option, active));
+
+$var-scrjk-class-option-align-top: getMap($var-scrjk-json-entry-scrjk, (class, option, align, top));
+$var-scrjk-class-option-align-right: getMap($var-scrjk-json-entry-scrjk, (class, option, align, right));
+$var-scrjk-class-option-align-bottom: getMap($var-scrjk-json-entry-scrjk, (class, option, align, bottom));
+$var-scrjk-class-option-align-left: getMap($var-scrjk-json-entry-scrjk, (class, option, align, left));

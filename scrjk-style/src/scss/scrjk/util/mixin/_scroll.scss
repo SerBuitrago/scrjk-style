@@ -1,0 +1,19 @@
+@mixin mixin-scroll(
+    $track: (var(#{$var-scrjk-txt-var}background-1)), 
+    $thumb: (var(#{$var-scrjk-txt-var}background-1), var(#{$var-scrjk-txt-var}color-1)), 
+    $dimension: (7px, 7px), 
+    $radius: 5px
+) {
+    &::-webkit-scrollbar{
+        width: nth($dimension, 1);
+        height: nth($dimension, 2);
+    }
+    &::-webkit-scrollbar-track {
+        background:  nth($track, 1);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: nth($thumb, 1);
+        border-radius: $radius;
+        border: 1px solid nth($thumb, 2);
+    }
+}

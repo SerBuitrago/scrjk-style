@@ -2,5 +2,76 @@
   * SCRJK Library CSS - Init v1.0.0 (https://github.com/SerBuitrago/scrjk-style)
   * Copyright 2021 The Authors (https://github.com/SerBuitrago)
   * Licensed MIT (https://github.com/SerBuitrago/scrjk-style/blob/master/LICENSE)
-  */:root{--scrjk-background-1:#FDBE34;--scrjk-color-1:#34332F;--scrjk-background-2:#F2F7FF;--scrjk-color-2:#34332F;--scrjk-background-3:#10316B;--scrjk-color-3:#fff;--scrjk-background-4:#0B409C;--scrjk-color-4:#fff;--scrjk-background-amber:#FFC107;--scrjk-color-amber:#34332F;--scrjk-background-cyam:#00bcd4;--scrjk-color-cyam:#fff;--scrjk-background-black:#34332F;--scrjk-color-black:#fff;--scrjk-background-blue:#2196F3;--scrjk-color-blue:#34332F;--scrjk-background-brown:#795548;--scrjk-color-brown:#fff;--scrjk-background-gray:#9e9e9e;--scrjk-color-gray:#34332F;--scrjk-background-green:#4CAF50;--scrjk-color-green:#fff;--scrjk-background-indigo:#3f51b5;--scrjk-color-indigo:#fff;--scrjk-background-lime:#cddc39;--scrjk-color-lime:#34332F;--scrjk-background-orange:#FF7514;--scrjk-color-orange:#34332F;--scrjk-background-purple:#673ab7;--scrjk-color-purple:#fff;--scrjk-background-pink:#e91e63;--scrjk-color-pink:#34332F;--scrjk-background-red:#F44336;--scrjk-color-red:#34332F;--scrjk-background-teal:#009688;--scrjk-color-teal:#fff;--scrjk-background-yellow:#ffeb3b;--scrjk-color-yellow:#34332F;--scrjk-background-white:#fff;--scrjk-color-white:#34332F;--scrjk-background-transparent:rgba(0,0,0,0);--scrjk-color-transparent:#fff;--scrjk-background-info:#2196F3;--scrjk-color-info:#34332F;--scrjk-background-danger:#F44336;--scrjk-color-danger:#34332F;--scrjk-background-warning:#ffeb3b;--scrjk-color-warning:#34332F;--scrjk-background-success:#4CAF50;--scrjk-color-success:#fff;--scrjk-background-fatal:#34332F;--scrjk-color-fatal:#fff;--scrjk-background-body:#fff;--scrjk-color-body:#34332F;--scrjk-background-disabled:#9e9e9e;--scrjk-color-disabled:#34332F;--scrjk-spacer-auto:auto;--scrjk-spacer-0:0em;--scrjk-spacer-1:.25em;--scrjk-spacer-2:.5em;--scrjk-spacer-3:.75em;--scrjk-spacer-4:1em;--scrjk-spacer-5:1.25em;--scrjk-spacer-6:1.5em;--scrjk-spacer-7:1.75em;--scrjk-spacer-8:2em;--scrjk-spacer-9:2.25em;--scrjk-spacer-10:2.5em;--scrjk-spacer-11:2.75em;--scrjk-spacer-12:3em}
-
+  */
+:root {
+  --scrjk-background-1: #FDBE34;
+  --scrjk-color-1: #34332F;
+  --scrjk-background-2: #F2F7FF;
+  --scrjk-color-2: #34332F;
+  --scrjk-background-3: #10316B;
+  --scrjk-color-3: #fff;
+  --scrjk-background-4: #0B409C;
+  --scrjk-color-4: #fff;
+  --scrjk-background-amber: #FFC107;
+  --scrjk-color-amber: #34332F;
+  --scrjk-background-cyam: #00bcd4;
+  --scrjk-color-cyam: #fff;
+  --scrjk-background-black: #34332F;
+  --scrjk-color-black: #fff;
+  --scrjk-background-blue: #2196F3;
+  --scrjk-color-blue: #34332F;
+  --scrjk-background-brown: #795548;
+  --scrjk-color-brown: #fff;
+  --scrjk-background-gray: #9e9e9e;
+  --scrjk-color-gray: #34332F;
+  --scrjk-background-green: #4CAF50;
+  --scrjk-color-green: #fff;
+  --scrjk-background-indigo: #3f51b5;
+  --scrjk-color-indigo: #fff;
+  --scrjk-background-lime: #cddc39;
+  --scrjk-color-lime: #34332F;
+  --scrjk-background-orange: #FF7514;
+  --scrjk-color-orange: #34332F;
+  --scrjk-background-purple: #673ab7;
+  --scrjk-color-purple: #fff;
+  --scrjk-background-pink: #e91e63;
+  --scrjk-color-pink: #34332F;
+  --scrjk-background-red: #F44336;
+  --scrjk-color-red: #34332F;
+  --scrjk-background-teal: #009688;
+  --scrjk-color-teal: #fff;
+  --scrjk-background-yellow: #ffeb3b;
+  --scrjk-color-yellow: #34332F;
+  --scrjk-background-white: #fff;
+  --scrjk-color-white: #34332F;
+  --scrjk-background-transparent: rgba(0,0,0,0);
+  --scrjk-color-transparent: #fff;
+  --scrjk-background-info: #2196F3;
+  --scrjk-color-info: #34332F;
+  --scrjk-background-danger: #F44336;
+  --scrjk-color-danger: #34332F;
+  --scrjk-background-warning: #ffeb3b;
+  --scrjk-color-warning: #34332F;
+  --scrjk-background-success: #4CAF50;
+  --scrjk-color-success: #fff;
+  --scrjk-background-fatal: #34332F;
+  --scrjk-color-fatal: #fff;
+  --scrjk-background-body: #fff;
+  --scrjk-color-body: #34332F;
+  --scrjk-background-disabled: #9e9e9e;
+  --scrjk-color-disabled: #34332F;
+  --scrjk-spacer-auto: auto;
+  --scrjk-spacer-0: 0em;
+  --scrjk-spacer-1: .25em;
+  --scrjk-spacer-2: .5em;
+  --scrjk-spacer-3: .75em;
+  --scrjk-spacer-4: 1em;
+  --scrjk-spacer-5: 1.25em;
+  --scrjk-spacer-6: 1.5em;
+  --scrjk-spacer-7: 1.75em;
+  --scrjk-spacer-8: 2em;
+  --scrjk-spacer-9: 2.25em;
+  --scrjk-spacer-10: 2.5em;
+  --scrjk-spacer-11: 2.75em;
+  --scrjk-spacer-12: 3em
+}

@@ -1,0 +1,8 @@
+.container{
+    @include mixin-container(
+        nth(getMap($var-scrjk-value-media, (getMap($var-scrjk-json-entry-layout, (container, option, dimension, width)))), 1)
+    );
+    &.#{$var-scrjk-class-option-scroll}{
+        @include mixin-scroll();
+    }
+}
