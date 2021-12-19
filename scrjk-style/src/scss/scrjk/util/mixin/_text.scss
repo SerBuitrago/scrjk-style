@@ -1,0 +1,23 @@
+@mixin mixin-text(
+    $color: var(#{$var-scrjk-txt-var}color-body), 
+    $display: block,
+    $align: center,
+    $text-transform: uppercase, 
+    $font-family: inherit, 
+    $overflow: visible
+) {
+    display: $display;
+    width: 100%;
+    color: $color;
+	text-align: $align;
+	height: auto;
+	text-transform: $text-transform;
+	font-family: $font-family;
+	overflow: $overflow; 
+}
+
+@mixin mixin-text-truncate($important: "") {
+    overflow: hidden #{$important};
+    text-overflow: ellipsis #{$important};
+    white-space: nowrap #{$important};
+}
