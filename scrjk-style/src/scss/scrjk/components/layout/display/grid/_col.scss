@@ -1,0 +1,42 @@
+.grid-col{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    padding: var(#{$var-scrjk-txt-var}spacer-2);
+}
+
+.grid-col-fixed{
+    @include mixin-display-grid-col-fixed();
+}
+
+.grid-nogutter{
+    & > .grid-col,
+    & > [class*="#{grid-col}"],
+    & > .grid-col-fixed,
+    & > [class*="#{grid-col-fixed}"]{
+        padding: 0;
+    }
+}
+
+$map: getMap($var-scrjk-json-entry-layout, (display, all, grid, option, col)); 
+@each $key-a, $value-a in $map{
+    $key-a: remove($key-a, $var-scrjk-value-index-key);
+    .grid-col-#{$key-a}{
+        width: var(#{$var-scrjk-txt-var}grid-col-#{$key-a}) #{$var-scrjk-txt-important};
+        @extend .grid-col-fixed;
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            $key-a: remove($key-a, $var-scrjk-value-index-key);
+            .grid-#{$key-media}-col-#{$key-a}{
+                width: var(#{$var-scrjk-txt-var}grid-col-#{$key-a}) #{$var-scrjk-txt-important};
+                @include mixin-display-grid-col-fixed();
+            }
+        }
+    }
+}
