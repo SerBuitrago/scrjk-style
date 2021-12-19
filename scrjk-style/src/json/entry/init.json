@@ -1,6 +1,139 @@
 {
     "SCRJKInit": {
-        
+        "text": {
+            "all":{
+                "align": {
+                    "iterator": {
+                        "justify": {
+                            "_1": ["text-align", "justify"]
+                        },
+                        "left": {
+                            "_1": ["text-align", "left"]
+                        },
+                        "right": {
+                            "_1": ["text-align", "right"]
+                        },
+                        "center":  {
+                            "_1": ["text-align", "center"]
+                        },
+                        "inherit": {
+                            "_1": ["text-align", "inherit"]
+                        }
+                    }
+                },
+                "transform": {
+                    "iterator": {
+                        "low": {
+                            "_1": ["text-transform", "lowercase"]
+                        },
+                        "upp": {
+                            "_1": ["text-transform", "uppercase"]
+                        },
+                        "cap": {
+                            "_1": ["text-transform", "capitalize"]
+                        },  
+                        "none": {
+                            "_1": ["text-transform", "none"]
+                        },  
+                        "full": {
+                            "_1": ["text-transform", "full-width"]
+                        },
+                        "inherit": {
+                            "_1": ["text-transform", "inherit"]
+                        }    
+                    }
+                },
+                "weight": {
+                    "iterator": {
+                        "lighter":  {
+                            "_1": ["font-weight", "lighter"]
+                        },
+                        "light":  {
+                            "_1": ["font-weight", "300"]
+                        },
+                        "normal":  {
+                            "_1": ["font-weight", "400"]
+                        },
+                        "bold":  {
+                            "_1": ["font-weight", "700"]
+                        },
+                        "bolder":  {
+                            "_1": ["font-weight", "bolder"]
+                        }
+                    }
+                },
+                "style": {
+                    "iterator": {
+                        "normal":  {
+                            "_1": ["font-style", "normal"]
+                        },
+                        "italic":  {
+                            "_1": ["font-style", "italic"]
+                        },
+                        "oblique":  {
+                            "_1": ["font-style", "oblique"]
+                        },
+                        "inherit":  {
+                            "_1": ["font-style", "inherit"]
+                        }
+                    }
+                },
+                "size": {
+                    "iterator": {
+                        "default": {
+                            "_body": ["16px", "16px", "16px", "15px", "14px"],
+                            "_1":   "1em"
+                        },
+                        "media": {
+                            "_xs":   "0.5em",
+                            "_sm":   "1em",
+                            "_md":   "1.5em",
+                            "_lg":   "2.5em",
+                            "_xl":   "5em",
+                            "_xxl":  "7em"
+                        },
+                        "title": {
+                            "_h1":   "2.5em",
+                            "_h2":   "2em",
+                            "_h3":   "1.75em",
+                            "_h4":   "1.5em",
+                            "_h5":   "1.25em",
+                            "_h6":   "1em"
+                        }
+                    }
+                },
+                "family": {
+                    "option": {
+                        "info": {
+                            "url": "'https://fonts.googleapis.com/css2'",
+                            "display": "display=swap"
+                        }
+                    },
+                    "iterator": {
+                        "_1": {
+                            "alt": "'family=Mulish'",
+                            "value": ["'Mulish'", "monospace", "sans-serif"]
+                        },
+                        "_2":{
+                            "alt": "'family=Share+Tech+Mono'",
+                            "value": ["'Share Tech Mono'", "cursive", "monospace"]
+                        },
+                        "_3": {
+                            "alt": "'family=Shadows+Into+Light'",
+                            "value": ["'Shadows Into Light'", "cursive", "monospace"]
+                        },
+                        "_4": {
+                            "alt": "'family=Architects+Daughter'",
+                            "value": ["'Architects Daughter'", "cursive", "monospace"]
+                        },
+                        "_5":{
+                            "alt": "'family=East+Sea+Dokdo'",
+                            "value": ["'East Sea Dokdo'", "cursive", "monospace"]
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
