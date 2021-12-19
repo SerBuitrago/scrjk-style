@@ -1,3 +1,57 @@
+@mixin mixin-iterator(
+    $map, 
+    $name, 
+    $isMedia: $var-scrjk-value-false, 
+    $isKeyRemove: $var-scrjk-value-false, 
+    $before: "", 
+    $after: ""
+) {
+    @if $map != $var-scrjk-txt-null {
+        @each $key-a, $value-a in $map{
+            @if $isKeyRemove {
+                $key-a: remove($key-a, $var-scrjk-value-index-key);
+            }
+            .#{$before}#{$name}#{$after}-#{$key-a}{
+                @include mixin-iterator-tag($value-a);
+            }
+        }
+        @if $isMedia {
+            @each $key-media, $value-media in $var-scrjk-value-media{
+                @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+                    @each $key-a, $value-a in $map{
+                        @if $isKeyRemove {
+                            $key-a: remove($key-a, $var-scrjk-value-index-key);
+                        }
+                        .#{$before}#{$name}-#{$key-media}#{$after}-#{$key-a}{
+                            @include mixin-iterator-tag($value-a);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin mixin-iterator-tag($map: ()) {
+    @if $map != $var-scrjk-txt-null {
+        @each $key-a, $value-a in $map { 
+            $auxTag: "";
+            $auxValue: "";
+            $i: 0;
+            @each $value-b in $value-a { 
+                @if $i == 0 {
+                    $auxTag: #{$value-b};
+                }@else{
+                    $auxValue: "#{$auxValue}#{$value-b}";
+                } 
+                $i: $i +1;
+            }
+            #{$auxTag}: #{$auxValue} #{$var-scrjk-txt-important};
+        }
+    }
+}
+
+
 @mixin mixin-iterator-root-background(
     $iterator: (),
     $isRemove: $var-scrjk-value-false,

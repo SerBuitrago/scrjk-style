@@ -5,4 +5,10 @@
     @include mixin-iterator-root-background(getMap($var-scrjk-json-color, (document)));
 
     @include mixin-iterator-root(getMap($var-scrjk-json-entry-scrjk, (spacer)), "spacer", $var-scrjk-value-true);
+    
+    @include mixin-iterator-root(
+        getMap($var-scrjk-json-entry-layout, (display, all, grid, option, col)), 
+        "grid-col", 
+        $var-scrjk-value-true
+    );
 }

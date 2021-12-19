@@ -1,0 +1,18 @@
+$map: getMap($var-scrjk-json-entry-layout, (display, all, grid, option, col)); 
+@each $key-a, $value-a in $map{
+    $key-a: remove($key-a, $var-scrjk-value-index-key);
+    .grid-offset-#{$key-a}{
+        margin-left: var(#{$var-scrjk-txt-var}grid-col-#{$key-a}) #{$var-scrjk-txt-important};
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map{
+            $key-a: remove($key-a, $var-scrjk-value-index-key);
+            .grid-#{$key-media}-offset-#{$key-a}{
+                margin-left: var(#{$var-scrjk-txt-var}grid-col-#{$key-a}) #{$var-scrjk-txt-important};
+            }
+        }
+    }
+}

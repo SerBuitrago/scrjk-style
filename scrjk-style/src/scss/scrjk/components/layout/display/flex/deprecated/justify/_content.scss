@@ -1,0 +1,8 @@
+@include mixin-iterator(
+    getMap($var-scrjk-json-entry-layout, (display, all, flex, all, deprecated, all, justify, all, content, iterator)), 
+    "flex",
+    $var-scrjk-value-true,
+    $var-scrjk-value-false,
+    "",
+    "-jc"
+); 

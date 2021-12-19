@@ -1,6 +1,6 @@
 @include mixin-iterator(
     getMap($var-scrjk-json-entry-layout, (display, option, order)), 
-    "flex",
+    "grid",
     $var-scrjk-value-true,
     $var-scrjk-value-true,
     "",
