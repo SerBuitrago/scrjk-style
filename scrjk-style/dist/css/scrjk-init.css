@@ -372,3 +372,61 @@ button::-moz-focus-inner {
 [hidden] {
   display: none
 }
+.txt,
+.txt-line {
+  display: block;
+  width: 100%;
+  color: inherit;
+  text-align: left;
+  height: auto;
+  text-transform: normal;
+  font-family: inherit;
+  overflow: visible
+}
+.txt-line {
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  white-space: nowrap!important
+}
+@media screen and (max-width:1400px) {
+  .txt-xxl-line {
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important
+  }
+}
+@media screen and (max-width:1200px) {
+  .txt-xl-line {
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important
+  }
+}
+@media screen and (max-width:992px) {
+  .txt-lg-line {
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important
+  }
+}
+@media screen and (max-width:768px) {
+  .txt-md-line {
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important
+  }
+}
+@media screen and (max-width:576px) {
+  .txt-sm-line {
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important
+  }
+}
+@media screen and (max-width:360px) {
+  .txt-xs-line {
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important
+  }
+}

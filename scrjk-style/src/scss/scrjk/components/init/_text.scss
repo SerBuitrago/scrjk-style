@@ -1,0 +1,26 @@
+.txt{
+    @include mixin-text(inherit, block, left, normal);
+}
+
+.txt-line{
+    @extend .txt;
+    @include mixin-text-truncate($var-scrjk-txt-important);
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        .txt-#{$key-media}-line{
+            @include mixin-text-truncate($var-scrjk-txt-important);
+        }
+    }
+}
+
+@import "text/default";
+@import "text/align";
+@import "text/transform";
+@import "text/weight";
+@import "text/style";
+@import "text/other";
+@import "text/size";
+@import "text/family";
+@import "text/stroke";
