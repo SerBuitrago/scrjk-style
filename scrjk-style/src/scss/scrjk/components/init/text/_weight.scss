@@ -1,0 +1,8 @@
+@include mixin-iterator(
+    getMap($var-scrjk-json-entry-init, (text, all, weight, iterator)), 
+    "txt",
+    $var-scrjk-value-true,
+    $var-scrjk-value-false,
+    "",
+    "-fw"
+);

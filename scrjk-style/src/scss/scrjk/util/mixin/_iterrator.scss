@@ -122,3 +122,17 @@
         }
     } 
 }
+
+@mixin mixin-iterator-root-font-family(
+    $iterrator: (), 
+    $tag: "font-family", 
+    $children: ("value"),
+    $character: $var-scrjk-txt-character-1
+) {
+    @if $tag != $var-scrjk-txt-null {
+        $tag: $tag + $character;
+        @each $key, $value in $iterrator {
+            #{$var-scrjk-txt-var}#{$tag}#{remove($key, $var-scrjk-value-index-key)}: #{getMap($value, $children)};
+        }
+    } 
+}

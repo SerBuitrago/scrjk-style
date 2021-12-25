@@ -1,5 +1,5 @@
 {
-    "SCRJKInit": {
+    "SCRJKEntryInit": {
         "text": {
             "all":{
                 "align": {
@@ -82,7 +82,8 @@
                     "iterator": {
                         "default": {
                             "_body": ["16px", "16px", "16px", "15px", "14px"],
-                            "_1":   "1em"
+                            "_1":   "1em",
+                            "_auto": "auto"
                         },
                         "media": {
                             "_xs":   "0.5em",
@@ -129,6 +130,50 @@
                         "_5":{
                             "alt": "'family=East+Sea+Dokdo'",
                             "value": ["'East Sea Dokdo'", "cursive", "monospace"]
+                        }
+                    }
+                },
+                "stroke":{
+                    "all": {
+                        "width": {
+                            "iterator": {
+                                "_0": {
+                                    "_1": ["-webkit-text-stroke-width", "0px"]
+                                },
+                                "_1": {
+                                    "_1": ["-webkit-text-stroke-width", "1px"]
+                                },
+                                "_2": {
+                                    "_1": ["-webkit-text-stroke-width", "2px"]
+                                },
+                                "_3": {
+                                    "_1": ["-webkit-text-stroke-width", "3px"]
+                                },
+                                "_4": {
+                                    "_1": ["-webkit-text-stroke-width", "4px"]
+                                },
+                                "_5": {
+                                    "_1": ["-webkit-text-stroke-width", "5px"]
+                                },
+                                "_6": {
+                                    "_1": ["-webkit-text-stroke-width", "6px"]
+                                },
+                                "_7": {
+                                    "_1": ["-webkit-text-stroke-width", "7px"]
+                                },
+                                "_8":  {
+                                    "_1": ["-webkit-text-stroke-width", "8px"]
+                                },
+                                "_9": {
+                                    "_1": ["-webkit-text-stroke-width", "9px"]
+                                },
+                                "_10":  {
+                                    "_1": ["-webkit-text-stroke-width", "10px"]
+                                },
+                                "_1em": {
+                                    "_1": ["-webkit-text-stroke-width", "1em"]
+                                }
+                            }
                         }
                     }
                 }

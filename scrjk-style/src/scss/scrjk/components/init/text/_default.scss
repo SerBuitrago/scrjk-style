@@ -1,0 +1,14 @@
+.txt-title{
+    @include mixin-text(inherit);
+    font-size: var(#{$var-scrjk-txt-var}font-size-h1);
+}
+
+.txt-subtitle{
+    @include mixin-text(inherit, block, left, capitalize);
+    font-size: var(#{$var-scrjk-txt-var}font-size-h2);
+} 
+
+.txt-paragraph{
+    @include mixin-text(inherit, block, justify, normal);
+    font-size: var(#{$var-scrjk-txt-var}font-size-#{$var-scrjk-value-key}1);
+}
