@@ -1,0 +1,22 @@
+$map:  getMap($var-scrjk-json-entry-init, (text, all, size, iterator));
+@each $key-a, $value-a in $map {
+    @each $key-b, $value-b in $value-a {
+        $key-b: #{remove($key-b, $var-scrjk-value-index-key)};
+        .txt-fz-#{$key-b}{
+            font-size: var(#{$var-scrjk-txt-var}font-size-#{$key-b}) #{$var-scrjk-txt-important};
+        }
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map {
+            @each $key-b, $value-b in $value-a {
+                $key-b: #{remove($key-b, $var-scrjk-value-index-key)};
+                .txt-#{$key-media}-fz-#{$key-b}{
+                    font-size: var(#{$var-scrjk-txt-var}font-size-#{$key-b}) #{$var-scrjk-txt-important};
+                }
+            }
+        }
+    }
+}

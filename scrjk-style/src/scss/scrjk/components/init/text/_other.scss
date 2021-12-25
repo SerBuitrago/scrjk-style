@@ -1,0 +1,27 @@
+.txt-o-wrap{
+    white-space: wrap #{$var-scrjk-txt-important};
+}
+
+.txt-o-nowrap{
+    white-space: nowrap #{$var-scrjk-txt-important};
+}
+
+.txt-o-truncate{
+    @include mixin-text-truncate($var-scrjk-txt-important);
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        .txt-#{$key-media}-o-wrap{
+            white-space: wrap #{$var-scrjk-txt-important};
+        }
+        
+        .txt-#{$key-media}-o-nowrap{
+            white-space: nowrap #{$var-scrjk-txt-important};
+        }
+        
+        .txt-#{$key-media}-o-truncate{
+            @include mixin-text-truncate($var-scrjk-txt-important);
+        }
+    }
+}
