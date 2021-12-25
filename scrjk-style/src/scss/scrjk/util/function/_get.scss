@@ -38,3 +38,22 @@
         @return getMap($map, ($mode, value));
     }
 }
+
+@function getFontFamilyGoogle(
+    $map:(), 
+    $family: getMap($var-scrjk-json-entry-init, (text, all, family, option, info))
+){
+    $url: getMap($family, ("url"));
+    $display: getMap($family, ("display"));
+    $size: length($map);
+    $aux: $url + "?";
+    $i: 0;
+    @each $key, $value in $map {
+        $aux: $aux + getMap($value, ("alt"));
+        $i: $i + 1;
+        @if $i < $size { 
+            $aux: $aux + "&"; 
+        }
+    }
+    @return $aux;
+}

@@ -178,6 +178,56 @@
                     }
                 }
             }
+        },
+        "shadow": {
+            "all": {
+                "box": {
+                    "option": {
+                        "outside": {
+                            "_1": [
+                                "0px 0px 6px 2px rgba(0,0,0,0.3)"
+                            ],
+                            "_2": [
+                                "0 2px 1px -1px rgba(0,0,0,0.2)",
+                                "0 1px 1px  0   rgba(0,0,0,0.14)",
+                                "0 1px 3px  0   rgba(0,0,0,0.12)"
+                            ],
+                            "_3": [
+                                "7px 7px 15px rgba(55, 84, 170, 0.15)", 
+                                "-7px -7px 20px transparent", 
+                                "inset 0px 0px 4px rgba(255, 255, 255, 0.2)", 
+                                "inset 7px 7px 15px rgba(55, 84, 170, 0)", 
+                                "inset -7px -7px 20px rgba(255, 255, 255, 0)", 
+                                "0px 0px 4px rgba(255, 255, 255, 0)"
+                            ]
+                        }
+                    },
+                    "iterator":{
+                        "neon": [
+                            ["0 0 10px"],
+                            ["0 0 40px"],
+                            ["0 0 10px"]
+                        ]
+                    }
+                },
+                "txt":{
+                    "option": {
+                        "outside": {
+                            "_1": [
+                                "0px 0px 6px 2px rgba(0,0,0,0.3)"
+                            ]
+                        }
+                    },
+                    "iterator":{
+                        "border": [
+                            ["-1px -1px 0"],
+                            [" 1px -1px 0"],
+                            ["-1px  1px 0"],
+                            [" 1px  1px 0"]
+                        ]
+                    }
+                }
+            }
         }
     }
 

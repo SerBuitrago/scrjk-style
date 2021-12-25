@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Mulish&family=Share+Tech+Mono&family=Shadows+Into+Light&family=Architects+Daughter&family=East+Sea+Dokdo);
 /*!
   * SCRJK Library CSS - Init v1.0.0 (https://github.com/SerBuitrago/scrjk-style)
   * Copyright 2021 The Authors (https://github.com/SerBuitrago)
@@ -1746,5 +1747,113 @@ button::-moz-focus-inner {
   }
   .txt-xs-stroke-w-1em {
     -webkit-text-stroke-width: 1em!important
+  }
+}
+.shadow-box-1 {
+  box-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+}
+.shadow-box-2 {
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important
+}
+.shadow-box-3 {
+  box-shadow: 7px 7px 15px rgba(55,84,170,.15),-7px -7px 20px transparent,inset 0 0 4px rgba(255,255,255,.2),inset 7px 7px 15px rgba(55,84,170,0),inset -7px -7px 20px rgba(255,255,255,0),0 0 4px rgba(255,255,255,0)!important
+}
+@media screen and (max-width:1400px) {
+  .shadow-xxl-box-1 {
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+  .shadow-xxl-box-2 {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important
+  }
+  .shadow-xxl-box-3 {
+    box-shadow: 7px 7px 15px rgba(55,84,170,.15),-7px -7px 20px transparent,inset 0 0 4px rgba(255,255,255,.2),inset 7px 7px 15px rgba(55,84,170,0),inset -7px -7px 20px rgba(255,255,255,0),0 0 4px rgba(255,255,255,0)!important
+  }
+}
+@media screen and (max-width:1200px) {
+  .shadow-xl-box-1 {
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+  .shadow-xl-box-2 {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important
+  }
+  .shadow-xl-box-3 {
+    box-shadow: 7px 7px 15px rgba(55,84,170,.15),-7px -7px 20px transparent,inset 0 0 4px rgba(255,255,255,.2),inset 7px 7px 15px rgba(55,84,170,0),inset -7px -7px 20px rgba(255,255,255,0),0 0 4px rgba(255,255,255,0)!important
+  }
+}
+@media screen and (max-width:992px) {
+  .shadow-lg-box-1 {
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+  .shadow-lg-box-2 {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important
+  }
+  .shadow-lg-box-3 {
+    box-shadow: 7px 7px 15px rgba(55,84,170,.15),-7px -7px 20px transparent,inset 0 0 4px rgba(255,255,255,.2),inset 7px 7px 15px rgba(55,84,170,0),inset -7px -7px 20px rgba(255,255,255,0),0 0 4px rgba(255,255,255,0)!important
+  }
+}
+@media screen and (max-width:768px) {
+  .shadow-md-box-1 {
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+  .shadow-md-box-2 {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important
+  }
+  .shadow-md-box-3 {
+    box-shadow: 7px 7px 15px rgba(55,84,170,.15),-7px -7px 20px transparent,inset 0 0 4px rgba(255,255,255,.2),inset 7px 7px 15px rgba(55,84,170,0),inset -7px -7px 20px rgba(255,255,255,0),0 0 4px rgba(255,255,255,0)!important
+  }
+}
+@media screen and (max-width:576px) {
+  .shadow-sm-box-1 {
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+  .shadow-sm-box-2 {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important
+  }
+  .shadow-sm-box-3 {
+    box-shadow: 7px 7px 15px rgba(55,84,170,.15),-7px -7px 20px transparent,inset 0 0 4px rgba(255,255,255,.2),inset 7px 7px 15px rgba(55,84,170,0),inset -7px -7px 20px rgba(255,255,255,0),0 0 4px rgba(255,255,255,0)!important
+  }
+}
+@media screen and (max-width:360px) {
+  .shadow-xs-box-1 {
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+  .shadow-xs-box-2 {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important
+  }
+  .shadow-xs-box-3 {
+    box-shadow: 7px 7px 15px rgba(55,84,170,.15),-7px -7px 20px transparent,inset 0 0 4px rgba(255,255,255,.2),inset 7px 7px 15px rgba(55,84,170,0),inset -7px -7px 20px rgba(255,255,255,0),0 0 4px rgba(255,255,255,0)!important
+  }
+}
+.shadow-txt-1 {
+  text-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+}
+@media screen and (max-width:1400px) {
+  .shadow-xxl-txt-1 {
+    text-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+}
+@media screen and (max-width:1200px) {
+  .shadow-xl-txt-1 {
+    text-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+}
+@media screen and (max-width:992px) {
+  .shadow-lg-txt-1 {
+    text-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+}
+@media screen and (max-width:768px) {
+  .shadow-md-txt-1 {
+    text-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+}
+@media screen and (max-width:576px) {
+  .shadow-sm-txt-1 {
+    text-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
+  }
+}
+@media screen and (max-width:360px) {
+  .shadow-xs-txt-1 {
+    text-shadow: 0 0 6px 2px rgba(0,0,0,.3)!important
   }
 }
