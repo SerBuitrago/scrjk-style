@@ -1,0 +1,66 @@
+$map: getMap($var-scrjk-json-entry-layout, (shadow, all, txt, iterator));
+
+$map-color: getMap($var-scrjk-json-color, default);
+@each $key-a, $value-a in $map-color{
+    $key-a: remove($key-a, 2);
+    $color: var(#{$var-scrjk-txt-var}background-#{$key-a});
+    @each $key-b, $value-b in $map{
+        .shadow-txt-#{$key-b}-#{$key-a}{
+            text-shadow: #{getConcatText($value-b, $color)} #{$var-scrjk-txt-important};
+        }
+    }
+}
+
+$map-alert: getMap($var-scrjk-json-color, alert);
+@each $key-a, $value-a in $map-alert{
+    $color: var(#{$var-scrjk-txt-var}background-#{$key-a});
+    @each $key-b, $value-b in $map{
+        .shadow-txt-#{$key-b}-#{$key-a}{
+            text-shadow: #{getConcatText($value-b, $color)} #{$var-scrjk-txt-important};
+        }
+    }
+}
+
+$map-palette: getMap($var-scrjk-json-color, palette);
+@each $key-a, $value-a in $map-palette{
+    $key-a: remove($key-a, 2);
+    $color: var(#{$var-scrjk-txt-var}background-#{$key-a});
+    @each $key-b, $value-b in $map{
+        .shadow-txt-#{$key-b}-palette-#{$key-a}{
+            text-shadow: #{getConcatText($value-b, $color)} #{$var-scrjk-txt-important};
+        }
+    }
+}
+
+@each $key-media, $value-media in $var-scrjk-value-media{
+    @media screen and (#{$var-scrjk-txt-media}: #{nth($value-media, 1)}) {
+        @each $key-a, $value-a in $map-color{
+            $key-a: remove($key-a, 2);
+            $color: var(#{$var-scrjk-txt-var}background-#{$key-a});
+            @each $key-b, $value-b in $map{
+                .shadow-#{$key-media}-txt-#{$key-b}-#{$key-a}{
+                    text-shadow: #{getConcatText($value-b, $color)} #{$var-scrjk-txt-important};
+                }
+            }
+        }
+
+        @each $key-a, $value-a in $map-alert{
+            $color: var(#{$var-scrjk-txt-var}background-#{$key-a});
+            @each $key-b, $value-b in $map{
+                .shadow-#{$key-media}-txt-#{$key-b}-#{$key-a}{
+                    text-shadow: #{getConcatText($value-b, $color)} #{$var-scrjk-txt-important};
+                }
+            }
+        }
+
+        @each $key-a, $value-a in $map-palette{
+            $key-a: remove($key-a, 2);
+            $color: var(#{$var-scrjk-txt-var}background-#{$key-a});
+            @each $key-b, $value-b in $map{
+                .shadow-#{$key-media}-txt-#{$key-b}-palette-#{$key-a}{
+                    text-shadow: #{getConcatText($value-b, $color)} #{$var-scrjk-txt-important};
+                }
+            }
+        }
+    }
+}

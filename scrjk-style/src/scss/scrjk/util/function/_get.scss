@@ -57,3 +57,28 @@
     }
     @return $aux;
 }
+
+@function getConcatText(
+    $map: (), 
+    $color: var(#{$var-scrjk-txt-var}background-1),
+    $separator: $var-scrjk-txt-character-3,
+) {
+    $chain:"";
+    @if $map !=  $var-scrjk-txt-null{
+        $length: length($map);
+        $i: 0;
+        $other: "";
+        @each $value in $map{
+            $i: $i + 1;
+            @if $value != $var-scrjk-txt-null {
+                @if $i < $length {
+                    $other: $separator;
+                }@else{
+                    $other: "";  
+                }
+                $chain: "#{$chain} #{$value} #{$color} #{$other}"
+            }
+        }
+    }
+    @return $chain;
+}
