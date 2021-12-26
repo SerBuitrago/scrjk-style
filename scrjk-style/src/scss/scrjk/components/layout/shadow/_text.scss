@@ -1,4 +1,4 @@
-$map: getMap($var-scrjk-json-entry-init, (shadow, all, txt, option, outside));
+$map: getMap($var-scrjk-json-entry-layout, (shadow, all, txt, option, outside));
 @each $key-a, $value-a in $map {
     .shadow-txt-#{remove($key-a, $var-scrjk-value-index-key)}{
         text-shadow: #{$value-a} #{$var-scrjk-txt-important};

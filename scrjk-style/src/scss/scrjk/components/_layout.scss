@@ -12,6 +12,8 @@
  * $MARGIN.
  * $PADDING.
  * $OVERFLOW.
+ * $TEXT.
+ * $SHADOW.
  */
 @import "layout/container";
 @import "layout/border";
@@ -23,3 +25,5 @@
 @import "layout/margin";
 @import "layout/padding";
 @import "layout/overflow";
+@import "layout/text";
+@import "layout/shadow";
