@@ -1,4 +1,4 @@
-$map:  getMap($var-scrjk-json-entry-init, (text, all, size, iterator));
+$map:  getMap($var-scrjk-json-entry-layout, (text, all, size, iterator));
 @each $key-a, $value-a in $map {
     @each $key-b, $value-b in $value-a {
         $key-b: #{remove($key-b, $var-scrjk-value-index-key)};

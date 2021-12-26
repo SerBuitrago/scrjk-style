@@ -41,7 +41,7 @@
 
 @function getFontFamilyGoogle(
     $map:(), 
-    $family: getMap($var-scrjk-json-entry-init, (text, all, family, option, info))
+    $family: getMap($var-scrjk-json-entry-layout, (text, all, family, option, info))
 ){
     $url: getMap($family, ("url"));
     $display: getMap($family, ("display"));

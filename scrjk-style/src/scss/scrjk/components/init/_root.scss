@@ -5,26 +5,26 @@
     @include mixin-iterator-root-background(getMap($var-scrjk-json-color, (document)));
 
     @include mixin-iterator-root(
-        getMap($var-scrjk-json-entry-init, 
+        getMap($var-scrjk-json-entry-layout, 
         (text, all, size, iterator, default)), 
         "font-size", 
         $var-scrjk-value-true
     );
     @include mixin-iterator-root(
-        getMap($var-scrjk-json-entry-init, 
+        getMap($var-scrjk-json-entry-layout, 
         (text, all, size, iterator, media)), 
         "font-size", 
         $var-scrjk-value-true
     );
     @include mixin-iterator-root(
-        getMap($var-scrjk-json-entry-init, 
+        getMap($var-scrjk-json-entry-layout, 
         (text, all, size, iterator, title)), 
         "font-size", 
         $var-scrjk-value-true
     );
 
     @include mixin-iterator-root-font-family(
-        getMap($var-scrjk-json-entry-init, (text, all, family, iterator))
+        getMap($var-scrjk-json-entry-layout, (text, all, family, iterator))
     );
 
     @include mixin-iterator-root(

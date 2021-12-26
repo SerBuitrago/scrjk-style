@@ -1,2 +1,2 @@
-$map: getFontFamilyGoogle(getMap($var-scrjk-json-entry-init, (text, all, family, iterator)));
+$map: getFontFamilyGoogle(getMap($var-scrjk-json-entry-layout, (text, all, family, iterator)));
 @import url('#{$map}');

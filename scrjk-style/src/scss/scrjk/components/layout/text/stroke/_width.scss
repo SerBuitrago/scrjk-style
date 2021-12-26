@@ -1,5 +1,5 @@
 @include mixin-iterator(
-    getMap($var-scrjk-json-entry-init, (text, all, stroke, all, width, iterator)), 
+    getMap($var-scrjk-json-entry-layout, (text, all, stroke, all, width, iterator)), 
     "txt",
     $var-scrjk-value-true,
     $var-scrjk-value-true,
